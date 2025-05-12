@@ -267,8 +267,10 @@ bool ConvertTTFToWOFF2(const uint8_t *data, size_t length,
       const Font::Table* table_to_store = font.FindTable(tag ^ 0x80808080);
       if (table_to_store == NULL) table_to_store = &original;
 
-      StoreBytes(table_to_store->data, table_to_store->length,
-                 &transform_offset, &transform_buf[0]);
+      if (table_to_store->data != NULL) {
+        StoreBytes(table_to_store->data, table_to_store->length,
+                   &transform_offset, &transform_buf[0]);
+      }
     }
   }
 

@@ -1,0 +1,24 @@
+.{
+    .name = .woff2,
+    .version = "1.1.0",
+    .fingerprint = 0x59bf06a4576428bd, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .brotli = .{
+            .url = "https://github.com/sno2/brotli/archive/0c83ab3d325d7c5d11f53415b92c42aebcbc98b2.tar.gz",
+            .hash = "brotli-1.1.0-EXe8AXkkAACC9muw43DiKfOQc_nb03GtGUvcrKhZmbUI",
+        },
+        .ibm_plex_sans = .{
+            .url = "https://github.com/IBM/plex/releases/download/%40ibm%2Fplex-sans%401.1.0/ibm-plex-sans.zip",
+            .hash = "N-V-__8AAHx9wwCXDYaI-Bqj3h8Q9ISr9xIuGRGIhT34zt2L",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "build",
+        "LICENSE",
+        "README.md",
+    },
+}

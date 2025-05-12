@@ -1,4 +1,13 @@
-﻿This is a README for the font compression reference code. There are several
+﻿# woff2
+
+This is [woff2](https://github.com/google/woff2), packaged and modified for
+[Zig](https://ziglang.org/).
+
+The original README contents are included below.
+
+---
+
+This is a README for the font compression reference code. There are several
 compression related modules in this repository.
 
 brotli/ contains reference code for the Brotli byte-level compression
